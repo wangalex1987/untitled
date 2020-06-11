@@ -3,7 +3,7 @@ import HTMLTestRunner_PY3
 suite=unittest.TestSuite()
 suite.addTest(unittest.makeSuite(test.test_login))
 print(os.getcwd())
-report_path= "./report/tpshop{}.html".format(time.strftime('%Y%m%d %H%M%S'))
+report_path= "./report/tpshop.html"
 with open(report_path, mode='wb') as f:
 
     runner = HTMLTestRunner_PY3.HTMLTestRunner(f, verbosity=1, title="tpshop注册登录接口功能测试",
